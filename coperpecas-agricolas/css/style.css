@@ -144,18 +144,21 @@ body {
 }
 
 .box-imgs-servicos{
-    justify-content: space-evenly;
+    background-color: aqua;
+    margin: auto;
+    width: 70%;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-}
+    gap: 20px;
 
-.card-servicos{
-   
 }
 
 .img-transbordo{
-    width: 250px;
-    height: 380px;
-    object-fit: cover;
+    flex: 1;
+    border-radius: 5px;
+    border: 2px solid ;
+    margin-bottom: 10px;
+    padding: 1.5em;
 }
 /* section container-pecas_carregadeira start*/
