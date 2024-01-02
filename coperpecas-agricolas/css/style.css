@@ -126,8 +126,7 @@ body {
 /* header end*/
 
 /* section container-servicos start */
-.container-servicos{
-    
+.container-servicos{ 
     padding: 20px 0;
     flex-direction: column;
     justify-content: center;
@@ -138,21 +137,24 @@ body {
     text-align: center;
 }
 
-.container-banner-img{
-}
-
 .container-imgs-servicos{
+    width: 100%;
 }
 
 .box-imgs-servicos{
     background-color: #a9a6a6;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 1fr) ;
+    grid-template-rows: auto ;
+}
+
+.img-container{
+    padding: 20px;
 }
 .img-container:nth-child(1){
-    grid-row: 1 /1;
-    grid-column: 1 / 2;
+    grid-row: 1 ;
+    grid-column: 1 / 1;
+    border: 1px solid;
 }
 
 
@@ -162,11 +164,12 @@ body {
 }
 
 .img-transbordo:nth-child(9){
-   gri
+   
 }
 
+/*
 @media screen and (max-width:350px) {
-    .navtop-menu {
+     .navtop-menu {
         flex-direction: column;
         flex-wrap: nowrap;
         position: absolute;
@@ -209,6 +212,6 @@ body {
         background-color: #00bf63;
         position: inherit;
     }
-    
+     */
 }
-/* section container-pecas_carregadeira start*/ */
+/* section container-pecas_carregadeira start*/ 
