@@ -142,31 +142,29 @@ body {
 }
 
 .box-imgs-servicos{
-    background-color: #a9a6a6;
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: 250px ;
+    gap: 1rem;
 }
 
 .img-container{
     padding: 20px;
+    background-color: #ededed;
+    border-radius: 20px;
 }
-/* .img-container:nth-child(1){
-    grid-row: 1 ;
-    grid-column: 1 / 1;
-    border: 1px solid;
-} */
-
+.img-container:nth-child(4),
+.img-container:nth-child(5),
+.img-container:nth-child(6),
+.img-container:nth-child(7){
+    padding:76px;
+}
 
 .img-transbordo{
     display: block;
     height: 100%;
     width:100%;
     object-fit: contain;
-}
-
-.img-transbordo:nth-child(9){
-   
 }
 
 /*
