@@ -22,9 +22,8 @@ body {
 }
 
 .container {
-    width: 1318px;
+    width: 1280px;
     margin: 0 auto;
-    padding: 20px;
 }
 
 /* header start*/
@@ -142,6 +141,8 @@ body {
 }
 
 .box-imgs-servicos{
+    max-width: 980px;
+    margin:5em auto;
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: 250px ;
@@ -150,7 +151,7 @@ body {
 
 .img-container{
     padding: 20px;
-    background-color: #ededed;
+    background-color: #f6f6f6a2;
     border-radius: 20px;
 }
 .img-container:nth-child(4),
@@ -165,6 +166,11 @@ body {
     height: 100%;
     width:100%;
     object-fit: contain;
+    transition: 500ms;
+}
+
+.img-transbordo:hover, .img-transbordo:focus{
+    transform: scale(1.2);
 }
 
 /*
