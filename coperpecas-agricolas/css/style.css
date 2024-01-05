@@ -136,11 +136,12 @@ body {
     text-align: center;
 }
 
-.container-imgs-servicos{
+.container-imgs{
+    text-align: center;
     width: 100%;
 }
 
-.box-imgs-servicos{
+.box-imgs{
     max-width: 980px;
     margin:5em auto;
     display: grid;
@@ -161,7 +162,7 @@ body {
     padding:76px;
 }
 
-.img-transbordo{
+.imgs{
     display: block;
     height: 100%;
     width:100%;
@@ -173,6 +174,11 @@ body {
     transform: scale(1.2);
 }
 
+
+.container-mapa{
+    width: 100%;
+
+}
 /*
 @media screen and (max-width:350px) {
      .navtop-menu {
