@@ -1,0 +1,10 @@
+container cards.
+width:934px;
+height:1268px;ou deixar em auto.
+
+
+Tamanho do card.
+width: 198px;
+height: 244px;
+
+

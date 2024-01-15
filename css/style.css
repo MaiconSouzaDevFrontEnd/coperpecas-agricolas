@@ -1,0 +1,148 @@
+:root {
+    --color-green: #00bf63;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+}
+
+/* css genéricos */
+.flex {
+    display: flex;
+}
+
+.container {
+    width: 1318px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* header start*/
+.header_top {
+    height: 100vh;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../Img/banner/banner_main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+/* logo */
+.nav-top_logo {
+    justify-content: center;
+    overflow: hidden;
+    height: 150px;
+    padding: 20px;
+    background-color: #000000f2;
+}
+
+.nav-top-logo_img {
+    height: 100%;
+}
+
+/* nav */
+.nav-top {
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.navtop-menu {
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    background-color: #ffffffdc;
+}
+
+.navtop-a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 20px;
+    text-wrap: nowrap;
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+    outline: none;
+    transition: 500ms;
+}
+
+/* menu-burger */
+.burger-box {}
+
+.burger-fit {}
+
+/* header_top-content */
+.header_top-content {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+}
+
+.header_top-title {
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.header_top-subTitle {
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.header_top-txtEspecializada {
+    width: 80%;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* .header_top-content-atendimento{
+    
+} */
+
+.header_top-msg-atendimento{
+    width: 80%;
+    margin:20px auto;
+}
+
+.header_top-msg-atendimento .msg-atendimento{
+    color: #00bf63;
+    padding: 20px 30px;
+    font-size: 1.9em;
+    font-weight: bolder;
+    text-shadow: 0 0 4.5px;
+}
+
+/* section container-servicos start */
+.container-servicos{ 
+    padding: 20px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subContainer{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.container-imgs-servicos{
+    width: 100%;
+}
+
+.box-imgs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 250px) ;
+    gap: 1rem;
+}
+

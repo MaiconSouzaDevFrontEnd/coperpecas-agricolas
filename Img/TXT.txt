@@ -1,0 +1,5 @@
+cor de fundo da logo
+background-color: #082335
+
+cor da fonte da logo
+color:#cb9b45
