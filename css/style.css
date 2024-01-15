@@ -123,26 +123,75 @@ body {
     text-shadow: 0 0 4.5px;
 }
 
-/* section container-servicos start */
-.container-servicos{ 
-    padding: 20px 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+/* section  start */
+
 .subContainer{
-    margin-top: 50px;
-    text-align: center;
-}
+    max-width:1280px;
+    margin: 50px auto;
+    background-color: #000;
+    border: 5px solid #000;
+    border-radius: 30px;
 
-.container-imgs-servicos{
-    width: 100%;
-}
 
-.box-imgs{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 250px) ;
-    gap: 1rem;
+    grid-template-columns:repeat(4, 1fr) ;
+    grid-template-rows:repeat(4, 180px);
+    grid-gap: 1.5em;
+    grid-template-areas:
+        "img1 img2 img3 img4"
+        "img1 img2 img3 img4"
+        "img5 img5 img6 img7"
+        "img5 img5 img8 img7"
+        ;
 }
 
+.subContainer .iten{
+    background-color: #fff;
+    position:relative;
+    border: 5px solid #000;
+    border-radius: 30px;
+}
+
+.subContainer .iten img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Nome Grid areas */
+.subContainer .img1{
+    grid-area: img1;
+}
+
+.subContainer .img2{
+    grid-area: img2;
+}
+
+.subContainer .img3{
+    grid-area: img3;
+}
+
+.subContainer .img4{
+    grid-area: img4;
+}
+
+.subContainer .img5{
+    grid-area: img5;
+}
+
+.subContainer .img6{
+    grid-area: img6;
+}
+
+.subContainer .img7{
+    grid-area: img7;
+}
+
+.subContainer .img8{
+    grid-area: img8;
+}
+
+/*  */
