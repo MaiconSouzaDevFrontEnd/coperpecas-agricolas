@@ -127,30 +127,36 @@ body {
 .container-pecas_carregadeira, .container-pecas_transbordo{
     padding-top: 5em;
     text-align: center;
-    background-color: #000;
+    background-color: #ffffffdc;
+}
+
+.banners{
+    width: 75%;
+    margin: 40px 0;
+    border-radius: 30px;
+}
+
+.subContainer{
+    width: 1000px;
+    margin:auto;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr) ;
+    grid-template-rows:repeat(4, 140px);
+    gap: 1em;
 }
 
 .subTitle{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2em;
+    width: 1000px;
+    margin: auto;
+    font-family: "Poppins",Arial, Helvetica, sans-serif;
+    font-size: 3em;
     text-transform: uppercase;
-    color: #fff;
-}
-.subContainer{
-    max-width:1280px;
-    margin:auto;
-    background-color: #000;
-    border: 5px solid #000;
-    border-radius: 30px;
-
-
-    display: grid;
-    grid-template-columns:repeat(4, 1fr) ;
-    grid-template-rows:repeat(4, 180px);
-    grid-gap: 1em;
+    color: var(--color-green);
+    padding: 5px;
+    background-color: #88888836;
 }
 
-.grid-template-area-1{
+.grid-template-area{
     grid-template-areas:
         "img1 img2 img3 img4"
         "img1 img2 img3 img4"
@@ -159,29 +165,19 @@ body {
         ;
 }
 
-.grid-template-area-2{
-    grid-template-areas:
-        "img1 img1 img2 img2"
-        "img3 img3 img4 img4"
-        "img5 img5 img6 img6"
-        "img7 img7 img8 img8"
-        ;
-}
-
 .subContainer .iten{
     background-color: #fff;
     position:relative;
-    border: 5px solid #000;
-    border-radius: 30px;
+    box-shadow: 0px 0px 5px 1px #888888;
+    border-radius: 20px;
+
 }
 
 .subContainer .iten img{
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     object-fit: contain;
+    padding: 15px;
 }
 
 /* Nome Grid areas */
@@ -217,4 +213,26 @@ body {
     grid-area: img8;
 }
 
-/*  */
+/* Peças para Transbordo */
+.grid-template-area-2{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.grid-template-area-2 .iten{
+    width: 220px;
+    height: 280px;
+    box-shadow: 0px 0px 5px 1px #888888;
+    border-radius: 20px;
+}
+
+.grid-template-area-2 .iten img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 15px;
+}
