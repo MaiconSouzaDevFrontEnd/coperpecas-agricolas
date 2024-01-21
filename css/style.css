@@ -22,9 +22,9 @@ body {
 }
 
 .container {
-    width: 1318px;
-    margin: 0 auto;
-    padding: 20px;
+    width: 1000px;
+    margin: 50px auto;
+    padding: 20px 0;
 }
 
 /* header start*/
@@ -131,14 +131,11 @@ body {
 }
 
 .banners{
-    width: 75%;
     margin: 40px 0;
-    border-radius: 50px;
-    padding: 0 15px;
+    border-radius: 50px; 
 }
 
 .subContainer{
-    width: 1000px;
     margin:auto;
     display: grid;
     grid-template-columns:repeat(4, 1fr) ;
@@ -147,7 +144,6 @@ body {
 }
 
 .subTitle{
-    width: 970px;
     margin: auto;
     text-shadow: 0 0 1px #000;
     font-family: "Poppins",Arial, Helvetica, sans-serif;
@@ -159,20 +155,42 @@ body {
     border-radius: 20px;
 }
 
-.grid-template-area{
+/* .grid-template-area{
     grid-template-areas:
         "img1 img2 img3 img4"
         "img1 img2 img3 img4"
         "img5 img5 img6 img7"
         "img5 img5 img8 img7"
         ;
+} */
+
+.grid-template-area{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
 }
+
+
 
 .subContainer .iten{
     background-color: #fff;
     position:relative;
     box-shadow: 0px 0px 5px 1px #888888;
     border-radius: 20px;
+    width: 220px;
+    height: 280px;
+}
+
+.subContainer .imgBig{
+    box-shadow: 0px 0px 5px 1px #888888;
+    border-radius: 20px;
+    width: 100%;
+    height: 50vh;
+}
+
+.subContainer .imgBig img{
+    height: 100%;
 }
 
 .subContainer .iten:hover, .grid-template-area-2 .iten:hover{
@@ -187,7 +205,7 @@ body {
 }
 
 /* Nome Grid areas */
-.subContainer .img1{
+/* .subContainer .img1{
     grid-area: img1;
 }
 
@@ -213,15 +231,10 @@ body {
 
 .subContainer .img7{
     grid-area: img7;
-}
-
-.subContainer .img8{
-    grid-area: img8;
-}
+} */
 
 /* Peças para Transbordo */
 .grid-template-area-2{
-    width: 1000px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
