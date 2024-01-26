@@ -136,11 +136,15 @@ body {
 }
 
 .subContainer{
-    margin:auto;
+    max-width: 100rem;
+    margin-inline: auto;
+    padding-inline: 2rem;
+    
+    /* margin:auto;
     display: grid;
     grid-template-columns:repeat(4, 1fr) ;
     grid-template-rows:repeat(4, 140px);
-    gap: 1em 1.5em;
+    gap: 1em 1.5em; */
 }
 
 .subTitle{
@@ -157,6 +161,10 @@ body {
 
 .grid-template-area{
     display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+
+    /* display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 130px);
     grid-template-areas:
@@ -164,7 +172,7 @@ body {
         "img1 img2 img3 img4"
         "img5 img5 img6 img4"
         "img5 img5 img8 img7"
-        ;
+        ; */
 }
 /* 
 .grid-template-area{
@@ -180,6 +188,7 @@ body {
     background-color: #fff;
     box-shadow: 0px 0px 5px 1px #888888;
     border-radius: 20px;
+    padding: 40px 30px;
 }
 
 /* .subContainer .imgBig{
@@ -189,7 +198,17 @@ body {
     height: 50vh;
 } */
 
-.subContainer .imgBig img{
+.subContainer .imgBig{
+    grid-row: span 2;
+    grid-column: span 2
+}
+
+.subContainer .imgOneColumn{
+    grid-row: span 2;
+    padding: 20px;
+}
+
+.subContainer .imgOneColumn img{
     height: 100%;
 }
 
@@ -199,12 +218,13 @@ body {
 
 .subContainer .iten img{
     width: 100%;
-    height: 100%;
+    max-width: 100%;
+    display: block;
+    aspect-ratio: 1 / 1;
     object-fit: contain;
-    padding: 15px;
 }
 
-/* Nome Grid areas */
+/* /* Nome Grid areas
 .subContainer .img1{
     grid-area: img1;
 }
@@ -236,7 +256,7 @@ body {
 .subContainer .img8{
     grid-area: img8;
 } 
- 
+  */
 /* Peças para Transbordo */
 .grid-template-area-2{
     display: flex;
