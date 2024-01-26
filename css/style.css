@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-    width: 1000px;
+    width: 1040px;
     margin: 50px auto;
     padding: 20px 0;
 }
@@ -131,8 +131,14 @@ body {
 }
 
 .banners{
-    margin: 40px 0;
-    border-radius: 50px; 
+    margin: 20px auto;
+    
+}
+
+.banners img{
+    width: 100%;
+    display: block;
+    border-radius: 10px; 
 }
 
 .subContainer{
@@ -156,13 +162,14 @@ body {
     color: var(--color-green);
     padding: 15px;
     background-color: #dcdcdc6f;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .grid-template-area{
     display: grid;
     gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 220px));
+    grid-template-rows: auto;
 
     /* display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -188,7 +195,7 @@ body {
     background-color: #fff;
     box-shadow: 0px 0px 5px 1px #888888;
     border-radius: 20px;
-    padding: 40px 30px;
+    padding: 30px 20px;
 }
 
 /* .subContainer .imgBig{
