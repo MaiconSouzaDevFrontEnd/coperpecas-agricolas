@@ -2,6 +2,7 @@
 
 :root {
     --color-green: #00bf63;
+    --color-whiteLite:#ffffffdc;
 }
 
 * {
@@ -16,6 +17,7 @@ body {
     min-height: 100vh;
     font-size: 16px;
     font-family: Poppins, sans-serif;
+    background-color: var(--color-whiteLite);
 }
 
 /* header start*/
@@ -51,15 +53,20 @@ body {
 .navtop-menu {
     justify-content: center;
     flex-wrap: wrap;
+
     list-style: none;
     background-color: #ffffffdc;
+    margin-top: 0;
 }
 
 .navtop-a {
     position: relative;
-    display: inline-block;
+    display: flex;
+    align-items: center;
     text-decoration: none;
     padding: 7px 20px;
+    box-shadow: 0 1px 1px #000 ;
+    
     text-wrap: nowrap;
     font-size: 15px;
     font-weight: 500;
@@ -68,6 +75,14 @@ body {
     transition: 500ms;
 }
 
+.navtop-a ion-icon{
+    font-size:18px ;
+    margin-right: 7px;
+}
+
+.navtop-a:hover {
+    background-color: #ccc;
+}
 /* menu-burger */
 .burger-box {}
 
@@ -360,6 +375,7 @@ __Este codigo aplica o desenho do transbordo nos cards__
 .localizacao_btn{
     margin: 10px auto;
     text-decoration: none;
+    align-items: center;
     font-size: 1em;
     font-weight: 400;
     color: #fff;
