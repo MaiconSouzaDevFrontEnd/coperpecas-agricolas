@@ -393,7 +393,7 @@ __Este codigo aplica o desenho do transbordo nos cards__
 
 
 /* Midia Mobile */
-@media screen and (max-width:375px) {
+@media screen and (max-width:400px) {
     .navtop-menu {
         flex-direction: column;
         justify-content: space-evenly;
@@ -402,5 +402,10 @@ __Este codigo aplica o desenho do transbordo nos cards__
     .navtop-a{
         justify-content: center;
         height: 9vh;
+    }
+
+    .grid-template-area-2{
+        width: 100vw;
+        flex-direction: column;
     }
 }
