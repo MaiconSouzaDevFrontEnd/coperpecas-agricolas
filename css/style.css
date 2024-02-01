@@ -9,6 +9,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    transition: 500ms;
 }
 
 html,
@@ -18,6 +19,7 @@ body {
     font-size: 16px;
     font-family: Poppins, sans-serif;
     background-color: var(--color-whiteLite);
+    scroll-behavior: smooth;
 }
 
 /* header start*/
@@ -387,4 +389,18 @@ __Este codigo aplica o desenho do transbordo nos cards__
 .localizacao_btn ion-icon{
     margin-left: 5px;
     font-size: 1.2em;
+}
+
+
+/* Midia Mobile */
+@media screen and (max-width:375px) {
+    .navtop-menu {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items:stretch;
+    }
+    .navtop-a{
+        justify-content: center;
+        height: 9vh;
+    }
 }
