@@ -187,35 +187,8 @@ body {
     border-radius: 10px;
 }
 
-.container-pecas_carregadeira .subTitle::after{
-    content: "";
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    margin-left:1rem ;
-
-    background-image: url('/Img/parts_logo/carregadeira_cana.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
 .container-pecas_carregadeira{
     position: relative;
-}
-
-.container-pecas_transbordo .subTitle::before{
-    content: "";
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    top: -8px;
-    left: 10px;
-
-    background-image: url('/Img/parts_logo/carreta_transbordo.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .grid-template-area{
@@ -387,6 +360,34 @@ body {
         padding: 5px;
         letter-spacing: 2px;
     }
+
+    .container-pecas_carregadeira .subTitle::after{
+        content: "";
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        margin-left:1rem ;
+    
+        background-image: url('/Img/parts_logo/carregadeira_cana.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .container-pecas_transbordo .subTitle::before{
+        content: "";
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: -8px;
+        left: 10px;
+    
+        background-image: url('/Img/parts_logo/carreta_transbordo.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
 
     .grid-template-area{
         grid-template-columns: minmax(180px, 100%);
