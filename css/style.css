@@ -412,7 +412,14 @@ body {
     }
 
     .contatos-box{
+        padding: 3px;
+        justify-content: center;
         flex-direction: column;
         flex:1;
     }
+
+/*     .contatos-contentLeft,
+    .contatos-contentRight{
+
+    }  */
 }
