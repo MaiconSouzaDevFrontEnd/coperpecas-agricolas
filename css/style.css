@@ -19,7 +19,7 @@ body {
     font-size: 16px;
     font-family: Poppins, sans-serif;
     background-color: var(--color-whiteLite);
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
 }
 
 /* header start*/
