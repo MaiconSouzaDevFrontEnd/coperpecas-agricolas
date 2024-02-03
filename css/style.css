@@ -410,4 +410,9 @@ body {
         height: 280px;
         padding:20px;
     }
+
+    .contatos-box{
+        flex-direction: column;
+        flex:1;
+    }
 }
