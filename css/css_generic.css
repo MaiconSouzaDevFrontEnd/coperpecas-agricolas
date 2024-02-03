@@ -4,7 +4,7 @@
 }
 
 .container {
-    width: 1040px;
+    max-width: 1040px;
     width: 100%;
     margin: 70px auto;
 }

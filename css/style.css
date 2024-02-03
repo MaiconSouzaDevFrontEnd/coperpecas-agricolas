@@ -170,22 +170,16 @@ body {
 }
 
 .subContainer{
-    max-width: 100rem;
-    margin-inline: auto;
     padding-inline: 2rem;
-    
-    /* margin:auto;
-    display: grid;
-    grid-template-columns:repeat(4, 1fr) ;
-    grid-template-rows:repeat(4, 140px);
-    gap: 1em 1.5em; */
 }
 
 .subTitle{
+    position: relative;
     margin: auto;
     text-shadow: 0 0 1px #000;
     font-family: "Poppins",Arial, Helvetica, sans-serif;
     font-size: 3em;
+    line-height: 2;
     text-transform: uppercase;
     color: var(--color-green);
     padding: 15px;
@@ -193,31 +187,42 @@ body {
     border-radius: 10px;
 }
 
+.container-pecas_carregadeira .subTitle::after{
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    margin-left:1rem ;
+
+    background-image: url('/Img/parts_logo/carregadeira_cana.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container-pecas_carregadeira{
+    position: relative;
+}
+
+.container-pecas_transbordo .subTitle::before{
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -8px;
+    left: 10px;
+
+    background-image: url('/Img/parts_logo/carreta_transbordo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .grid-template-area{
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(auto-fill, minmax(180px, 220px));
-    /* grid-template-rows: auto; */
-
-    /* display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 130px);
-    grid-template-areas:
-        "img1 img2 img3 img4"
-        "img1 img2 img3 img4"
-        "img5 img5 img6 img4"
-        "img5 img5 img8 img7"
-        ; */
 }
-/* 
-.grid-template-area{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-} */
-
-
 
 .subContainer .iten{
     position: relative;
@@ -226,30 +231,6 @@ body {
     border-radius: 20px;
     padding: 30px 20px;
 }
-/* 
-__Este codigo aplica o desenho do carregadeira nos cards__
-.subContainer .iten::before{
-    content: '';
-    position: absolute;
-    bottom: -13px;
-    right: -7px;
-    width: 70px;
-    height: 70px;
-    
-    
-    
-    background-image:url('/Img/parts_logo/carregadeira_cana.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-} */
-
-/* .subContainer .imgBig{
-    box-shadow: 0px 0px 5px 1px #888888;
-    border-radius: 20px;
-    width: 100%;
-    height: 50vh;
-} */
 
 .subContainer .imgBig{
     grid-row: span 2;
@@ -265,7 +246,7 @@ __Este codigo aplica o desenho do carregadeira nos cards__
     height: 100%;
 }
 
-.subContainer .iten:hover, .grid-template-area-2 .iten:hover{
+.subContainer .iten:hover, .boxTransbordo .iten:hover{
     transform: scale(1.02);
 }
 
@@ -277,41 +258,8 @@ __Este codigo aplica o desenho do carregadeira nos cards__
     object-fit: contain;
 }
 
-/* /* Nome Grid areas
-.subContainer .img1{
-    grid-area: img1;
-}
-
-.subContainer .img2{
-    grid-area: img2;
-}
-
-.subContainer .img3{
-    grid-area: img3;
-}
-
-.subContainer .img4{
-    grid-area: img4;
-}
-
-.subContainer .img5{
-    grid-area: img5;
-}
-
-.subContainer .img6{
-    grid-area: img6;
-}
-
-.subContainer .img7{
-    grid-area: img7;
-} 
-
-.subContainer .img8{
-    grid-area: img8;
-} 
-  */
 /* Peças para Transbordo */
-.grid-template-area-2{
+.boxTransbordo{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -319,32 +267,14 @@ __Este codigo aplica o desenho do carregadeira nos cards__
     gap: 20px;
 }
 
-.grid-template-area-2 .iten{
-    position: relative;
+.boxTransbordo .iten{
     width: 220px;
     height: 280px;
     box-shadow: 0px 0px 5px 1px #888888;
     border-radius: 20px;
 }
-/* 
-__Este codigo aplica o desenho do transbordo nos cards__
-.grid-template-area-2 .iten::before{
-    content: '';
-    position: absolute;
-    bottom: -1px;
-    right: 2px;
-    width: 50px;
-    height: 50px;
-    
-    
-    
-    background-image:url('/Img/parts_logo/carreta_transbordo.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-} */
 
-.grid-template-area-2 .iten img{
+.boxTransbordo .iten img{
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -390,6 +320,55 @@ __Este codigo aplica o desenho do transbordo nos cards__
     font-size: 1.2em;
 }
 
+/* container-contatos  */
+
+.container-contatos{
+    padding: 30px 0;
+    background-color: #ccc;
+    padding-bottom: 50px;
+}
+
+.contatos-box {
+    padding: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contatos-btn-whatsapp {
+    position: fixed;
+    bottom:80px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.contatos-btn-whatsapp ion-icon{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    color:white;
+    background-color: #00bf63;
+    border-radius:50% ;
+    animation: whatsapp 2s ease-in-out infinite;
+}
+
+@keyframes whatsapp{
+  
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(1.6px);
+        transform: scale(1.098);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
 
 /* Midia Mobile */
 @media screen and (max-width:400px) {
@@ -403,12 +382,14 @@ __Este codigo aplica o desenho do transbordo nos cards__
         height: 9vh;
     }
 
+    .subTitle{
+        font-size: 2.1em;
+        padding: 5px;
+        letter-spacing: 2px;
+    }
+
     .grid-template-area{
         grid-template-columns: minmax(180px, 100%);
-    }
-    .grid-template-area-2{
-        width: 100vw;
-        flex-direction: column;
     }
 
     .subContainer .imgBig{
@@ -420,4 +401,12 @@ __Este codigo aplica o desenho do transbordo nos cards__
         grid-row: span 1;
     }
     
+    .boxTransbordo{
+        padding-inline: 2rem;
+    }
+    .boxTransbordo .iten{
+        width: 100%;
+        height: 280px;
+        padding:20px;
+    }
 }
