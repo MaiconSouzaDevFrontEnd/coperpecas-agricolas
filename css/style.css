@@ -191,7 +191,7 @@ body {
     position: relative;
 }
 
-.grid-template-area{
+.carregadeira{
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(auto-fill, minmax(180px, 220px));
@@ -358,7 +358,7 @@ body {
     .subTitle{
         font-size: 2.1em;
         padding: 5px;
-        letter-spacing: 2px;
+        padding-bottom: 65px;
     }
 
     .container-pecas_carregadeira .subTitle::after{
@@ -389,7 +389,7 @@ body {
     }
     
 
-    .grid-template-area{
+    .carregadeira{
         grid-template-columns: minmax(180px, 100%);
     }
 
