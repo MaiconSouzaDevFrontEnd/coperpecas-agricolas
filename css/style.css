@@ -412,14 +412,16 @@ body {
     }
 
     .contatos-box{
-        padding: 3px;
+       
         justify-content: center;
         flex-direction: column;
-        flex:1;
+        align-items: center;
+        
     }
 
-/*     .contatos-contentLeft,
+    .contatos-contentLeft,
     .contatos-contentRight{
-
-    }  */
+        width: 100%;
+        padding: 5% ;
+    } 
 }
