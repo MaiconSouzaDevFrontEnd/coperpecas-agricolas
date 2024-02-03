@@ -196,8 +196,8 @@ body {
 .grid-template-area{
     display: grid;
     gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 220px));
-    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 220px));
+    /* grid-template-rows: auto; */
 
     /* display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -225,7 +225,6 @@ body {
     box-shadow: 0px 0px 5px 1px #888888;
     border-radius: 20px;
     padding: 30px 20px;
-    
 }
 /* 
 __Este codigo aplica o desenho do carregadeira nos cards__
@@ -404,8 +403,21 @@ __Este codigo aplica o desenho do transbordo nos cards__
         height: 9vh;
     }
 
+    .grid-template-area{
+        grid-template-columns: minmax(180px, 100%);
+    }
     .grid-template-area-2{
         width: 100vw;
         flex-direction: column;
     }
+
+    .subContainer .imgBig{
+        grid-row: span 1;
+        grid-column: span 1
+    }
+    
+    .subContainer .imgOneColumn{
+        grid-row: span 1;
+    }
+    
 }
