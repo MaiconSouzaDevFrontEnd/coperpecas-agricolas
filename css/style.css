@@ -68,44 +68,52 @@ body {
 }
 
 /* menu-burger */
-.box-Burger{
-    position: absolute;
-    top: -20%;
-    right: 1.5%;
-}
-.burger-box {
-    display: block;
-    width: 65px;
-    height: 65px;
 
+.burgerMenu {
     position: relative;
-   
-
-    background-color: rebeccapurple;
-    
-    outline: none;
-    border: none;
-    
-}
-
-.burger-box span{
-    position: absolute;
-    cursor: pointer;
+    top: -70px;
+    left: 87%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40px;
-    height: 4px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    height: 40px;
+    
+    cursor: pointer;
+}
+
+.burgerLinha{
+    position:relative;
+    display: inline-block;
+
+    width: 40px;
+    height: 3px;
+
     background-color: white;
-    border-radius: 4px;
+    border-radius: 30px;
 }
 
-.burger-box span:nth-child(1){
-  top: 20px;
+.burgerLinha::after, .burgerLinha::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 40px;
+    background-color: white;
 }
 
-.burger-box span:nth-child(3){
-  top: 50px;  
+.burgerLinha::after{
+    transform: translateY(10px);
+}
+
+.burgerLinha::before{
+    transform: translateY(-10px);
+}
+#burgerMenu:checked ~ . {
+    background-color: #000;
+}
+
+#burgerMenu:checked + .burgerMenu .burgerLinha{
+    background-color: #000;
 }
 
 /* ul navtop-menu */
@@ -169,9 +177,9 @@ body {
     line-height: 1.8;
 }
 
-.header_top-content-atendimento{
+/* .header_top-content-atendimento{
     
-}
+} */
 
 .header_top-msg-atendimento{
     width: 80%;
@@ -404,11 +412,9 @@ body {
 
     } */
     
-    .burger-box{
+    
+    .burgerMenu {
         display: block;
-    }
-    .burger-box.ativar .burgerMenu {
-        display: none;
     }
     
     .burger-box.ativar .burgerX{
@@ -434,34 +440,6 @@ body {
         padding-bottom: 65px;
     }
 
-    /* .container-pecas_carregadeira .subTitle::after{
-        content: "";
-        width: 60px;
-        height: 60px;
-        position: absolute;
-        margin-left:1rem ;
-    
-        background-image: url('/Img/parts_logo/carregadeira_cana.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    } */
-    
-   /*  .container-pecas_transbordo .subTitle::before{
-        content: "";
-        width: 60px;
-        height: 60px;
-        position: absolute;
-        top: -8px;
-        left: 10px;
-    
-        background-image: url('/Img/parts_logo/carreta_transbordo.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    
- */
     .carregadeira{
         grid-template-columns: minmax(180px, 100%);
     }
