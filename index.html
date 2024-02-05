@@ -16,12 +16,12 @@
 
 <body>
     <header class="header_top flex">
+        
 
         <nav class="nav-top">
             <div class="nav-top_logo flex">
                 <img src="./Img/logo500x500/logo.png" alt="logo da empresa coperpeças peças agrícolas"
                     class="nav-top-logo_img">
-            </div>
 
             <ul class="navtop-menu flex">
                 <li><a href="#home" class="navtop-a"><ion-icon name="home-outline"></ion-icon>Início</a></li>
@@ -30,22 +30,41 @@
                 <li><a href="#transbordo" class="navtop-a"><ion-icon name="settings-outline"></ion-icon>Peças-Transbordo</a></li>
                 <li><a href="#localizacao" class="navtop-a"><ion-icon name="location-outline"></ion-icon>Localização</a></li>
                 <li><a href="#contatos" class="navtop-a"><ion-icon name="call-outline"></ion-icon>Contatos</a></li>
+               <!--  <div class="box-Burger">
+                    <button class="burger-box">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>    -->   
+            </div>
+
+           
             </ul>
 
-            <div class="burger-box">
-                <span class="burger-fit"></span>
-            </div>
+            
         </nav>
 
         <div class="header_top-content">
+
             <h1 class="header_top-title">Coperpeças</h1>
+
             <h2 class="header_top-subTitle">Peças Agrícolas</h2>
+
             <p class="header_top-txtEspecializada">
                 Especializada em vendas de peças de carregadeira de cana, transbordo de cana e plantadora.
             </p>
+
             <div class="header_top-content-atendimento">
-                <p class="header_top-msg-atendimento"><span class="msg-atendimento">Atendimento 24 Horas</span></p>
+
+                <p class="header_top-msg-atendimento">
+                    <span class="msg-atendimento">
+                        Atendimento 24 Horas
+                    </span>
+                </p>
+
             </div>
+
         </div>
 
     </header>
@@ -199,12 +218,19 @@
     </footer>
 
 
-
-
-
     <!-- Scripts  -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        var burgerBox = document.getElementsByClassName('burger-box');
+
+        burgerBox.onclick = function(){
+            
+            burgerBox.classList.toggle('ativar');
+        }
+    </script>
+
 </body>
 
 </html>

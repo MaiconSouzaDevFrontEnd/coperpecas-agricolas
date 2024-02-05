@@ -3,6 +3,19 @@
 :root {
     --color-green: #00bf63;
     --color-whiteLite:#ffffffdc;
+   
+    --color-1:#60AA89;
+    --color-2:#3E4653;
+    --color-3:#4BBF7D;
+    --color-4:#606061;
+    --color-5:#40744E;
+
+    --color-6:#44BB81;
+    --color-7:#A8B5BF;
+    --color-8:#393D40;
+    --color-9:#53BF83;
+    --color-10:#407348;
+
 }
 
 * {
@@ -26,10 +39,12 @@ body {
 .header_top {
     height: 100vh;
     flex-direction: column;
+    
     background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../Img/banner/banner_main.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
+    position: relative;
 }
 
 /* logo */
@@ -52,13 +67,57 @@ body {
     position: relative;
 }
 
+/* menu-burger */
+.box-Burger{
+    position: absolute;
+    top: -20%;
+    right: 1.5%;
+}
+.burger-box {
+    display: block;
+    width: 65px;
+    height: 65px;
+
+    position: relative;
+   
+
+    background-color: rebeccapurple;
+    
+    outline: none;
+    border: none;
+    
+}
+
+.burger-box span{
+    position: absolute;
+    cursor: pointer;
+    width: 40px;
+    height: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: 4px;
+}
+
+.burger-box span:nth-child(1){
+  top: 20px;
+}
+
+.burger-box span:nth-child(3){
+  top: 50px;  
+}
+
+/* ul navtop-menu */
 .navtop-menu {
+    position: relative;
     justify-content: center;
     flex-wrap: wrap;
 
     list-style: none;
     background-color: #ffffffdc;
     margin-top: 0;
+    cursor: pointer;
 }
 
 .navtop-a {
@@ -85,10 +144,6 @@ body {
 .navtop-a:hover {
     background-color: #ccc;
 }
-/* menu-burger */
-.burger-box {}
-
-.burger-fit {}
 
 /* header_top-content */
 .header_top-content {
@@ -114,9 +169,9 @@ body {
     line-height: 1.8;
 }
 
-/* .header_top-content-atendimento{
+.header_top-content-atendimento{
     
-} */
+}
 
 .header_top-msg-atendimento{
     width: 80%;
@@ -345,10 +400,28 @@ body {
 
 /* Midia Mobile */
 @media screen and (max-width:400px) {
+    /* .nav-top{
+
+    } */
+    
+    .burger-box{
+        display: block;
+    }
+    .burger-box.ativar .burgerMenu {
+        display: none;
+    }
+    
+    .burger-box.ativar .burgerX{
+        display: inline;
+    }
     .navtop-menu {
+        position: absolute;
+        width: 100%;
+        top: 22.8vh;
         flex-direction: column;
         justify-content: space-evenly;
         align-items:stretch;
+        background-color: #fff;
     }
     .navtop-a{
         justify-content: center;
@@ -361,7 +434,7 @@ body {
         padding-bottom: 65px;
     }
 
-    .container-pecas_carregadeira .subTitle::after{
+    /* .container-pecas_carregadeira .subTitle::after{
         content: "";
         width: 60px;
         height: 60px;
@@ -372,9 +445,9 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-    }
+    } */
     
-    .container-pecas_transbordo .subTitle::before{
+   /*  .container-pecas_transbordo .subTitle::before{
         content: "";
         width: 60px;
         height: 60px;
@@ -388,7 +461,7 @@ body {
         background-position: center;
     }
     
-
+ */
     .carregadeira{
         grid-template-columns: minmax(180px, 100%);
     }
