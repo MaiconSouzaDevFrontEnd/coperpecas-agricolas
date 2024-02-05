@@ -70,6 +70,7 @@ body {
 /* menu-burger */
 
 #burgerMenu{
+    display: none;
     transition: all 2s;
     width: 0;
     height: 0;
@@ -82,13 +83,14 @@ body {
     position: relative;
     top: -70px;
     left: 87%;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     width: 40px;
     height: 40px;
     
     cursor: pointer;
+    
 }
 
 .burgerLinha{
@@ -429,7 +431,7 @@ body {
 @media screen and (max-width:400px) {
     
     .nav-top_logo{
-        height: 60%;
+        height: 70%;
     }
     .nav-top-logo_img {
         height: 100px;
@@ -437,6 +439,10 @@ body {
 
     #burgerMenu{
         top:0;
+        display: block;
+    }
+    .burgerMenu{
+        display: flex;
     }
     
     .navtop-menu {
@@ -448,7 +454,6 @@ body {
         align-items:stretch;
         background-color: #fff;
         transform: translateX(-100vw);
-
     }
     .navtop-a{
         justify-content: start;
